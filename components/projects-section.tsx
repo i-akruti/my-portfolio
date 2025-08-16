@@ -106,7 +106,7 @@ export function ProjectsSection() {
                       size="sm"
                       variant="outline"
                       className="flex-1 bg-transparent"
-                      onClick={() => window.open(project.githubUrl, "_blank")}
+                      onClick={() => window.open(project.githubUrl, "https://github.com/i-akruti")}
                     >
                       <Github className="w-4 h-4 mr-2" />
                       Code
