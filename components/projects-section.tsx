@@ -10,7 +10,7 @@ export function ProjectsSection() {
       title: "Alphasignal Newsletter",
       description:
         "Daily AI news hub with curated research, product updates, and launches. Currently serving 240,000 subscribers with an average click rate of ~41%.",
-      image: "/ai-newsletter-dashboard.png",
+      image: "/alphasignal-dashboard.png",
       tags: ["Content Strategy", "Newsletter", "AI Research", "Analytics"],
       liveUrl: "https://alphasignal.ai/last-email",
       githubUrl: null,
