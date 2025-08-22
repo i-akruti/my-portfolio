@@ -57,9 +57,7 @@ export function HeroSection() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-primary rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-2xl">🤖</span>
-            </div>
+            
           </div>
         </div>
       </div>

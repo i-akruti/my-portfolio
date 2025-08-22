@@ -1,27 +1,27 @@
 import { Card } from "@/components/ui/card"
-import { Brain, PenTool, Database, BookOpen, Cog, Rocket } from "lucide-react"
+import { Brain, PenTool, Cog, Rocket, Code, Users } from "lucide-react"
 
 export function AboutSection() {
   const skills = [
     {
       icon: <Brain className="w-6 h-6" />,
-      title: "AI and Robotics", // Updated from "AI & Machine Learning"
-      description: "PyTorch, OpenCV, Computer Vision, MLOps",
+      title: "AI & Robotics",
+      description: "PyTorch, OpenCV, Computer Vision, MLOps, Robotics-focused model workflows",
+    },
+    {
+      icon: <Code className="w-6 h-6" />,
+      title: "Developer Experience",
+      description: "React, Next.js, TypeScript, Git, CI/CD, SDKs, API documentation",
     },
     {
       icon: <PenTool className="w-6 h-6" />,
       title: "Technical Writing",
-      description: "SEO-optimized content, Developer guides, Whitepapers",
+      description: "Clear, developer-first documentation, tutorials, guides, and whitepapers",
     },
     {
-      icon: <Database className="w-6 h-6" />,
-      title: "Data Science",
-      description: "Python, AWS, Model Evaluation, Annotation Workflows",
-    },
-    {
-      icon: <BookOpen className="w-6 h-6" />,
-      title: "Content Strategy",
-      description: "Editorial planning, Newsletter curation, Community building",
+      icon: <Users className="w-6 h-6" />,
+      title: "Content & Community Strategy",
+      description: "Curriculum design, newsletter curation, editorial planning, developer community building",
     },
   ]
 
@@ -35,6 +35,8 @@ export function AboutSection() {
     "OpenCV",
     "Content Strategy",
     "Newsletter Curation",
+    "Developer Experience",
+    "Agentic AI Development",
   ]
 
   return (
@@ -71,9 +73,7 @@ export function AboutSection() {
                 alt="Akruti Acharya - AI/ML Specialist"
                 className="w-80 h-80 object-cover rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary rounded-full flex items-center justify-center">
-                <Brain className="w-12 h-12 text-primary-foreground" />
-              </div>
+              
             </div>
           </div>
         </div>
@@ -112,30 +112,12 @@ export function AboutSection() {
             <Cog className="w-12 h-12 text-accent mx-auto mb-4" />
             <h4 className="text-xl font-semibold text-card-foreground mb-4">Agentic AI Development</h4>
             <p className="text-muted-foreground leading-relaxed">
-              Exploring advanced AI agent architectures, multi-agent systems, and autonomous decision-making frameworks
-              to build more intelligent and adaptive AI solutions.
+              I'm taking Claude Code: A Highly Agentic Coding Assistant by DeepLearning.AI, learning how to plan, test, refactor, and debug projects with Claude. It's helping me refine my skills for creating RAG chatbots, dashboards, and Figma-to-web-app interfaces using agentic AI.
             </p>
           </Card>
         </div>
 
-        <div className="mt-16">
-          <h3 className="text-2xl font-bold text-center mb-8 text-foreground">Building Right Now</h3>
-          <Card className="p-8 bg-card">
-            <div className="flex items-start gap-4">
-              <Rocket className="w-8 h-8 text-accent mt-1 flex-shrink-0" />
-              <div>
-                <h4 className="text-xl font-semibold text-card-foreground mb-4">
-                  Claude Code: Agentic Coding Assistant
-                </h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  I'm taking Claude Code: A Highly Agentic Coding Assistant by DeepLearning.AI, learning how to plan,
-                  test, refactor, and debug projects with Claude. It's helping me refine my skills for creating RAG
-                  chatbots, dashboards, and Figma-to-web-app interfaces using agentic AI.
-                </p>
-              </div>
-            </div>
-          </Card>
-        </div>
+        
 
         <div className="mt-16 grid md:grid-cols-2 gap-8">
           <div>
