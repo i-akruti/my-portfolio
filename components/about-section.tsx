@@ -1,27 +1,27 @@
 import { Card } from "@/components/ui/card"
-import { Brain, PenTool, Cog, Rocket, Code, Users } from "lucide-react"
+import { Brain, PenTool, Database, BookOpen, Cog, Rocket } from "lucide-react"
 
 export function AboutSection() {
   const skills = [
     {
       icon: <Brain className="w-6 h-6" />,
-      title: "AI & Robotics",
-      description: "PyTorch, OpenCV, Computer Vision, MLOps, Robotics-focused model workflows",
-    },
-    {
-      icon: <Code className="w-6 h-6" />,
-      title: "Developer Experience",
-      description: "React, Next.js, TypeScript, Git, CI/CD, SDKs, API documentation",
+      title: "AI and Robotics", // Updated from "AI & Machine Learning"
+      description: "PyTorch, OpenCV, Computer Vision, MLOps",
     },
     {
       icon: <PenTool className="w-6 h-6" />,
       title: "Technical Writing",
-      description: "Clear, developer-first documentation, tutorials, guides, and whitepapers",
+      description: "SEO-optimized content, Developer guides, Whitepapers",
     },
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Content & Community Strategy",
-      description: "Curriculum design, newsletter curation, editorial planning, developer community building",
+      icon: <Database className="w-6 h-6" />,
+      title: "Data Science",
+      description: "Python, AWS, Model Evaluation, Annotation Workflows",
+    },
+    {
+      icon: <BookOpen className="w-6 h-6" />,
+      title: "Content Strategy",
+      description: "Editorial planning, Newsletter curation, Community building",
     },
   ]
 
@@ -35,8 +35,6 @@ export function AboutSection() {
     "OpenCV",
     "Content Strategy",
     "Newsletter Curation",
-    "Developer Experience",
-    "Agentic AI Development",
   ]
 
   return (
