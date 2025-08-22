@@ -1,77 +1,79 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
+@import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --background: oklch(0.98 0.01 320); /* Very light wine tint */
+  --foreground: oklch(0.15 0.05 320); /* Deep wine dark */
+  --card: oklch(0.96 0.02 320); /* Light wine card */
+  --card-foreground: oklch(0.15 0.05 320); /* Deep wine text */
+  --popover: oklch(0.98 0.01 320); /* Light wine popover */
+  --popover-foreground: oklch(0.15 0.05 320); /* Deep wine text */
+  --primary: oklch(0.25 0.15 320); /* Deep wine primary */
+  --primary-foreground: oklch(0.98 0.01 320); /* Light text on primary */
+  --secondary: oklch(0.94 0.02 320); /* Light wine secondary */
+  --secondary-foreground: oklch(0.15 0.05 320); /* Deep wine text */
+  --muted: oklch(0.92 0.02 320); /* Muted wine */
+  --muted-foreground: oklch(0.4 0.05 320); /* Medium wine text */
+  --accent: oklch(0.35 0.12 320); /* Wine accent */
+  --accent-foreground: oklch(0.98 0.01 320); /* Light text on accent */
+  --destructive: oklch(0.6 0.25 25); /* Red for errors */
+  --destructive-foreground: oklch(1 0 0); /* White text */
+  --border: oklch(0.88 0.02 320); /* Wine border */
+  --input: oklch(0.94 0.02 320); /* Light wine input */
+  --ring: oklch(0.25 0.15 320 / 0.5); /* Deep wine ring */
+  --chart-1: oklch(0.25 0.15 320); /* Deep wine */
+  --chart-2: oklch(0.35 0.12 320); /* Wine accent */
+  --chart-3: oklch(0.45 0.1 320); /* Lighter wine */
+  --chart-4: oklch(0.55 0.08 320); /* Even lighter wine */
+  --chart-5: oklch(0.65 0.06 320); /* Lightest wine */
+  --radius: 1rem;
+  --sidebar: oklch(0.96 0.02 320); /* Light wine sidebar */
+  --sidebar-foreground: oklch(0.15 0.05 320); /* Deep wine text */
+  --sidebar-primary: oklch(0.25 0.15 320); /* Deep wine primary */
+  --sidebar-primary-foreground: oklch(0.98 0.01 320); /* Light text */
+  --sidebar-accent: oklch(0.35 0.12 320); /* Wine accent */
+  --sidebar-accent-foreground: oklch(0.98 0.01 320); /* Light text */
+  --sidebar-border: oklch(0.88 0.02 320); /* Wine border */
+  --sidebar-ring: oklch(0.25 0.15 320 / 0.5); /* Deep wine ring */
+  --font-body: "Arial", sans-serif; /* Custom font family for body text */
+  --font-heading: "Georgia", serif; /* Custom font family for headings */
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: oklch(0.08 0.02 320); /* Very dark wine */
+  --foreground: oklch(0.95 0.01 320); /* Light wine text */
+  --card: oklch(0.1 0.02 320); /* Dark wine card */
+  --card-foreground: oklch(0.95 0.01 320); /* Light wine text */
+  --popover: oklch(0.08 0.02 320); /* Very dark wine */
+  --popover-foreground: oklch(0.95 0.01 320); /* Light wine text */
+  --primary: oklch(0.55 0.15 320); /* Lighter wine for dark mode */
+  --primary-foreground: oklch(0.08 0.02 320); /* Dark text on primary */
+  --secondary: oklch(0.15 0.03 320); /* Dark wine secondary */
+  --secondary-foreground: oklch(0.95 0.01 320); /* Light wine text */
+  --muted: oklch(0.18 0.03 320); /* Muted dark wine */
+  --muted-foreground: oklch(0.7 0.02 320); /* Medium light wine */
+  --accent: oklch(0.45 0.12 320); /* Wine accent for dark */
+  --accent-foreground: oklch(0.95 0.01 320); /* Light text on accent */
+  --destructive: oklch(0.6 0.25 25); /* Red for errors */
+  --destructive-foreground: oklch(0.95 0.01 320); /* Light text */
+  --border: oklch(0.2 0.03 320); /* Dark wine border */
+  --input: oklch(0.15 0.03 320); /* Dark wine input */
+  --ring: oklch(0.55 0.15 320 / 0.5); /* Wine ring */
+  --chart-1: oklch(0.55 0.15 320); /* Wine charts */
+  --chart-2: oklch(0.45 0.12 320);
+  --chart-3: oklch(0.65 0.1 320);
+  --chart-4: oklch(0.35 0.08 320);
+  --chart-5: oklch(0.75 0.06 320);
+  --sidebar: oklch(0.12 0.02 320); /* Dark wine sidebar */
+  --sidebar-foreground: oklch(0.95 0.01 320); /* Light wine text */
+  --sidebar-primary: oklch(0.55 0.15 320); /* Wine primary */
+  --sidebar-primary-foreground: oklch(0.08 0.02 320); /* Dark text */
+  --sidebar-accent: oklch(0.45 0.12 320); /* Wine accent */
+  --sidebar-accent-foreground: oklch(0.95 0.01 320); /* Light text */
+  --sidebar-border: oklch(0.2 0.03 320); /* Dark wine border */
+  --sidebar-ring: oklch(0.55 0.15 320 / 0.5); /* Wine ring */
 }
 
 @theme inline {
@@ -119,5 +121,16 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
   }
 }
